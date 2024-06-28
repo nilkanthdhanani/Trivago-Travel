@@ -1,0 +1,48 @@
+@import '../breakpoints/breakpoint';
+
+.learn-button {
+    button {
+        padding: 20px 55px;
+        @include font14;
+        font-weight: 600;
+        letter-spacing: 1px;
+        color: var(--color-white);
+        background-color: var(--color-black);
+        border: none;
+        cursor: pointer;
+        transition: 0.3s ease-in-out;
+        
+        &:hover {
+            transition: 0.3s ease-in-out;
+            background-color: var(--color-orange);
+        }
+
+        @include breakpoint("md-max") {
+            padding: 20px;
+        }
+    }
+}
+
+.learn-button2 {
+    button {
+        padding: 20px 55px;
+        @include font14;
+        font-weight: 600;
+        letter-spacing: 1px;
+        color: var(--color-black);
+        background-color: var(--color-white);
+        border: none;
+        cursor: pointer;
+        transition: 0.3s ease-in-out;
+        
+        &:hover {
+            transition: 0.3s ease-in-out;
+            color: var(--color-orange);
+            background-color: var(--bgcolor4);
+        }
+
+        @include breakpoint("md-max") {
+            padding: 20px;
+        }
+    }
+}
