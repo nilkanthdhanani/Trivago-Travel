@@ -4,6 +4,7 @@
     padding: 60px 0;
     background: var(--bgcolor);
     color: var(--color-white);
+    overflow: hidden;
 
     @include breakpoint("sm-max") {
         padding: 40px 0;
@@ -110,6 +111,7 @@
 
 .secrets {
     margin: 100px 0;
+    overflow: hidden;
 
     @include breakpoint("sm-max") {
         margin: 40px 0;
@@ -319,6 +321,7 @@
 
 .unique {
     margin: 100px 0;
+    overflow: hidden;
 
     @include breakpoint("sm-max") {
         margin: 40px 0;
@@ -407,8 +410,10 @@
             }
         }
 
-        .learn-button {
-            @include flex-center;
+        @include breakpoint("sm-max") {
+            .learn-button {
+                @include flex-center;
+            }
         }
     }
 }
@@ -589,11 +594,11 @@
             rgba(0, 0, 0, 0.17) 0px 12px 13px,
             rgba(0, 0, 0, 0.09) 0px -3px 5px;
 
-            @include breakpoint("sm-max") {
-                @include grid1c;
-                gap: 0;
-                box-shadow: none;
-            }
+        @include breakpoint("sm-max") {
+            @include grid1c;
+            gap: 0;
+            box-shadow: none;
+        }
 
         .deals-grid1 {
             height: 315px;
@@ -651,6 +656,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
+    overflow: hidden;
 
     .contact-grid {
         @include grid2c;
@@ -757,4 +763,9 @@
             }
         }
     }
+}
+
+.ncwd {
+    width: 100%;
+    background-color: aqua;
 }
