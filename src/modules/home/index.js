@@ -110,7 +110,7 @@ export default function Home() {
       <section className='nature'>
         <div className="container">
           <div className="nature-grid">
-            <div className="nature-grid1" data-aos="fade-up" data-aos-anchor=".scrollimg" data-aos-duration="1000">
+            <div className="nature-grid1" data-aos="fade-up" data-aos-duration="1000">
               <div className="nature-grid1-box">
                 <h2>Nature Tours</h2>
                 <p>Fringilla ut morbi tincidunt augue interdum velit euismod in. Vel pharetra vel turpis nunc eget. Vel pretium lectus quam id leo in vitae turpis massa. Nulla facilisi cras fermentum odio eu feugiat pretium.</p>
@@ -124,7 +124,7 @@ export default function Home() {
               <img src={nature2} alt="nature2" />
               <img className="scrollimg" src={nature3} alt="nature3" />
             </div>
-            <div className="nature-grid3" data-aos="fade-up" data-aos-anchor=".scrollimg" data-aos-duration="1000">
+            <div className="nature-grid3" data-aos="fade-up" data-aos-duration="1000">
               <img src={nature4} alt="nature4" />
               <div className="nature-grid3-box">
                 <h2>Exclusive deals</h2>
